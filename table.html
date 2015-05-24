@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+
 
     <title>Navbar Template for Bootstrap</title>
 
@@ -16,11 +16,11 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="bootstrap/css/navbar.css" rel="stylesheet">
+    
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,16 +38,17 @@
       }
       .card-table h4{
         margin-top: 0px;
-      }      
-      .card-table > .row{
-        margin-top: 40px;
+      }   
+
+      .card-table .card-table-header{
+        margin-top: 20px;
       }
       .card-table .inner{
         padding-bottom: 30px;
       }
       .card{
-        padding-bottom: 20px;
-      }
+        padding-bottom: 40px;
+      } 
     </style>
   </head>
 
@@ -102,11 +103,9 @@
 
 
       <div class="card-table">
-
-        <!-- SECTION 1 -->
+        <!-- BEGIN SECTION 1  -->
+        <!-- SECTION HEADER ROW-->
         <div class="row">
-
-          <!-- SECTION HEADER -->
           <div class="col-md-12 card-table-header">
             <div>
               <h3><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;Budget Breakdown</h3>
@@ -114,10 +113,13 @@
                   qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas 
               </p>
             </div>            
-          </div> 
-         <!-- END SECTION HEADER -->
+          </div>
+        </div> 
+       <!-- END SECTION HEADER ROW -->
 
-         <!-- CARD With Image -->
+        <!-- BEGIN CARD ROW -->
+        <div class="row">
+          <!-- BEGIN CARD WITH IMAGE-->
           <div class="col-md-6 card">
             <div class="row">
               <div class="col-md-12">
@@ -133,13 +135,15 @@
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 </p>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-4">
                 <a class="btn btn-primary">Read More</a>
               </div>              
             </div>
           </div>
+          <!-- END CARD WITH IMAGE -->
+        
 
-          <!-- CARD With Image -->
+          <!-- BEGIN CARD With IMAGE -->
           <div class="col-md-6 card">
             <div class="row">
               <div class="col-md-12">
@@ -155,48 +159,106 @@
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 </p>              
               </div>
-              <div class="col-md-12">
+              <div class="col-md-4">
                 <a class="btn btn-primary">Read More</a>
               </div>               
             </div>
           </div>
-
+          <!-- END CARD WITH IMAGE -->
         </div>
-        <!-- END SECTION 1 -->
+        <!-- END CARD ROW -->
 
-        <!-- SECTION 2 -->
+
+        <!-- BEGIN SECTION 2 -->
+        <!-- BEGIN SECTION HEADER ROW -->
         <div class="row">
-
-          <!-- SECTION HEADER -->
+          <!-- BEGIN SECTION HEADER -->
           <div class="col-md-12 card-table-header">
             <div>
               <h3><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp;Making the Budget</h3>
               <p>but also the leap into electronic typesetting, remaining essentially unchanged</p>
             </div>
           </div>
+          <!-- END SECTION HEADER -->
+        </div>
+        <!-- END SECTION HEADER ROW -->
 
+        <!-- BEGIN CARD ROW -->
+        <div class="row">
           <!-- CARD -->
           <div class="col-md-6 card">
-            <div class="inner">
-              <h4>Budget Process</h4>
-              <p>
-                Budget preparation affords departments the opportunity to reassess their goals and objectives and the strategies for accomplishing them. Even though the proposed budget is presented City Council in May and adopted in June, its preparation begins at least six months prior with projections of City revenues, expenditures, and overall financial capacity.
-              </p>
-              <a class="btn btn-primary">Read More</a>
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Budget Process</h4>
+              </div>                
+              <div class="col-md-6">
+                <p>
+                  Budget preparation affords departments the opportunity to reassess their goals and objectives and the strategies for accomplishing them. Even though the proposed budget is presented City Council in May and adopted in June, its preparation begins at least six months prior with projections of City revenues, expenditures, and overall financial capacity.
+                </p>
+              </div>
+
+              <!-- DETAIL LIST -->
+              <div class="col-md-6">
+                <p>Read more about:</p>
+                <ul class="small bold">
+                  <li>
+                    <p>
+                      Financial forecasting
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      City Council Strategic Planning
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Departmental Budget Development
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      City Manager Review
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Budget Adoption
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Budget Amendments and Revisions
+                    </p>
+                  </li> 
+                  <li>
+                    <p>
+                      Basis of Budgeting
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- END DETAIL LIST -->
+              <div class="col-md-4">                                                                                              
+                <a class="btn btn-primary">Read More</a>
+              </div>
             </div>
           </div>
 
           <!-- CARD -->
           <div class="col-md-6 card">
-            <div class="inner">
-              <h4>Organizational Structure</h4>
-              <p>
-                Budget preparation affords departments the opportunity to reassess their goals and objectives and the strategies for accomplishing them. Even though the proposed budget is presented City Council in May and adopted in June, its preparation begins at least six months prior with projections of City revenues, expenditures, and overall financial capacity.
-              </p>
-              <a class="btn btn-primary">Read More</a>
-            </div>
+            <h4>Organizational Structure</h4>
+            <p>
+              Budget preparation affords departments the opportunity to reassess their goals and objectives and the strategies for accomplishing them. Even though the proposed budget is presented City Council in May and adopted in June, its preparation begins at least six months prior with projections of City revenues, expenditures, and overall financial capacity.
+            </p>
+            <a class="btn btn-primary">Read More</a>
           </div>
+          <!-- END CARD -->
+        </div>
+        <!-- END CARD ROW -->
 
+        <!-- BEGIN CARD ROW -->
+        <div class="row">
           <!-- CARD With Image -->
           <div class="col-md-6 card">
             <div class="row">
@@ -213,51 +275,49 @@
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 </p>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-4">
                 <a class="btn btn-primary">Read More</a>
               </div>
             </div>
-          </div>         
-
-
+          </div> 
         </div>
+        <!-- END CARD ROW -->
         <!-- END SECTION 2 -->
 
-        <!-- SECTION 3 -->
+        <!-- BEGIN SECTION 3 -->
         <div class="row">
-
-          <!-- SECTION HEADER -->
+          <!-- BEGIN SECTION HEADER ROW -->
           <div class="col-md-12 card-table-header">
             <div>
               <h3><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;Other Resources</h3>
               <p>but also the leap into electronic typesetting, remaining essentially unchanged</p>
             </div>
-          </div> 
+          </div>
           <!-- END SECTION HEADER -->
+        </div> 
+        <!-- END SECTION HEADER ROW -->
 
+        <!-- BEGIN CARD ROW -->
+        <div class="row">
           <!-- CARD -->
           <div class="col-md-6 card">
-            <div class="inner">
-              <h4>Comprehensive Annual Financial Reports (CAFR)</h4>
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
-              </p>
-            </div>
+            <h4>Comprehensive Annual Financial Reports (CAFR)</h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+            </p>
           </div>
 
           <!-- CARD -->
           <div class="col-md-6 card">
-            <div class="inner">
-              <h4>Financial Policies</h4>
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
-              </p>
-              <a class="btn btn-primary">Read More</a>
-            </div>
-          </div>          
-
-        </div>  
-         <!-- END SECTION 3 -->
+            <h4>Financial Policies</h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+            </p>
+            <a class="btn btn-primary">Read More</a>
+          </div>
+        </div> 
+        <!-- END CARD ROW -->
+        <!-- END SECTION 3 -->
     
       </div>
      <!-- END CARD TABLE -->
@@ -271,6 +331,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+ 
   </body>
 </html>
